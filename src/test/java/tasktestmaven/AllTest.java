@@ -19,9 +19,9 @@ public class AllTest extends BaseTest {
 		HomePage homePage = new HomePage(driver);
 
 		// *************PAGE METHODS********************
-		homePage.goToN11().goToLoginPage().loginToN11("brky.dmr17@gmail.com", "1917Ekim")
-				.verifyLoginPassword(("E-posta adresiniz veya þifreniz hatalý"))
-				.verifyLoginPassword(("E-posta adresiniz veya þifreniz hatalý"));
+		homePage.goToN11().goToLoginPage().loginToN11("qwert12345@gmail.com", "12345")
+				.verifyLoginPassword(("E-posta adresiniz veya Ã¾ifreniz hatalÃ½"))
+				.verifyLoginPassword(("E-posta adresiniz veya Ã¾ifreniz hatalÃ½"));
 
 	}
 
@@ -31,8 +31,8 @@ public class AllTest extends BaseTest {
 		HomePage homePage = new HomePage(driver);
 
 		// *************PAGE METHODS********************
-		homePage.goToN11().goToLoginPage().loginToN11("", "").verifyLoginUserName("Lütfen e-posta adresinizi girin.")
-				.verifyLoginPassword("Bu alanýn doldurulmasý zorunludur.");
+		homePage.goToN11().goToLoginPage().loginToN11("", "").verifyLoginUserName("LÃ¼tfen e-posta adresinizi girin.")
+				.verifyLoginPassword("Bu alanÃ½n doldurulmasÃ½ zorunludur.");
 	}
 
 	@Test(priority = 2)
